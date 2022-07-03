@@ -41,9 +41,9 @@ class AddTodo extends Component {
     event.preventDefault();
     const jsonObject = {
       id: this.state.id,
-      task: task,
-      currentDate: currentDate,
-      dueDate: dueDate
+      task: this.state.task,
+      currentDate: this.state.currentDate,
+      dueDate: this.state.dueDate
    };
    Axios({
    method: "POST",
